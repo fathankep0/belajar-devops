@@ -1,0 +1,16 @@
+# action.yml
+name: 'sample-docker'
+description: 'sample-docker'
+inputs:
+  input_1:  # id of input
+    description: 'arbritrary string for the input'
+    required: true
+    default: 'sample-docker'
+outputs:
+  output_string: # id of output
+    description: 'arbritrary string for the output'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - "${{ inputs.input_1 }}"

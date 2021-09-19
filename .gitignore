@@ -1,0 +1,10 @@
+docker/ssh/config/authorized_keys
+jenkins-data
+.ssh_keys
+**/**/*.env
+**/*.terraform.lock.hcl
+ssh/config
+ssh/scripts
+*.tfstate
+*.terraform
+*.tfstate.backup
